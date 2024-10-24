@@ -1,71 +1,164 @@
-/* globals.css */
-
-/* Base styles */
-body {
+/* Reset some basic styles */
+* {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f7f7f7;
     color: #333;
     line-height: 1.6;
-}
-
-h1, h2, h3, h4, h5, h6 {
+    min-height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
     margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color: #0070f3; /* A shade of blue */
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Container styles */
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
-}
-
-/* Button styles */
-.button {
-    background-color: #0070f3;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.button:hover {
-    background-color: #005bb5;
-}
-
-/* Form styles */
-input[type="text"],
-input[type="email"],
-input[type="password"],
-textarea {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-input[type="submit"] {
-    background-color: #0070f3;
+  }
+  
+  #__next {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Navigation bar styles */
+  .navbar {
+    width: 100%;
+    background-color: #4CAF50;
     color: white;
-    border: none;
     padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    background-color: #45a049;
+  }
+  
+  /* Container and Layout */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .page-header {
+    margin: 40px 0;
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-input[type="submit"]:hover {
-    background-color: #005bb5;
-}
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  input, select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input:focus, select:focus {
+    border-color: #4CAF50;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  table tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Contact card styles */
+  .contact-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .contact-card h3 {
+    margin-bottom: 10px;
+  }
+  
+  .contact-card p {
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  /* Footer styles */
+  footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+  }
+  
