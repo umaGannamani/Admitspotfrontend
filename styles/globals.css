@@ -161,43 +161,85 @@
     background-color: #4CAF50;
     color: white;
   }
-  /* Home Page */
-.home-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    flex-direction: column;
-    background-image: url('/path-to-your-background-image.jpg');
-    background-size: cover;
-    background-position: center;
+ /* globals.css */
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
   }
   
+  a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 1.2rem;
+    margin-right: 20px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Container for the entire page */
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  .navbar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .navbar li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  /* Heading Section */
   .home-heading {
     font-size: 3rem;
-    color: #4CAF50;
-    margin-bottom: 20px;
-  }
-  
-  .home-text {
-    font-size: 1.5rem;
+    font-weight: bold;
     color: #333;
     text-align: center;
-    margin-bottom: 40px;
   }
   
+  .home-subheading {
+    font-size: 1.5rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Button */
   .home-button {
     background-color: #4CAF50;
     color: white;
-    padding: 15px 25px;
+    padding: 15px 30px;
     font-size: 1.2rem;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
   .home-button:hover {
     background-color: #45a049;
   }
+  
   /* Login Page */
 .login-container {
     display: flex;
