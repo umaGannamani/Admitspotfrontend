@@ -6,6 +6,7 @@ const Home = () => {
       <Navbar />
       <div className="home-container">
         <h1>Welcome to the Contact Manager App</h1>
+        <button>Get Started</button>
       </div>
     </>
   );
